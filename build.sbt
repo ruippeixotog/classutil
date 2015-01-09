@@ -3,9 +3,9 @@
 
 name := "classutil"
 
-organization := "org.clapper"
+organization := "net.ruippeixotog"
 
-version := "1.0.5"
+version := "1.0.6-SNAPSHOT"
 
 licenses := Seq(
   "BSD New" -> url("http://software.clapper.org/classutil/license.html")
@@ -15,9 +15,9 @@ homepage := Some(url("http://software.clapper.org/classutil/"))
 
 description := "A library for fast runtime class-querying, and more"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.4"
 
-crossScalaVersions := Seq("2.10.3", "2.11.0")
+crossScalaVersions := Seq("2.10.4", "2.11.4")
 
 // ---------------------------------------------------------------------------
 // Additional compiler options and plugins
@@ -31,8 +31,6 @@ lsSettings
 (LsKeys.tags in LsKeys.lsync) := Seq("classes", "byte code")
 
 (description in LsKeys.lsync) <<= description(d => d)
-
-bintraySettings
 
 // ---------------------------------------------------------------------------
 // ScalaTest dependendency
@@ -58,7 +56,13 @@ libraryDependencies ++= Seq(
 // ---------------------------------------------------------------------------
 // Publishing criteria
 
-// Don't set publishTo. The Bintray plugin does that automatically.
+publishTo <<= version { v =>
+  val nexus = "https://oss.sonatype.org/"
+  if (v.trim.endsWith("SNAPSHOT"))
+    Some("snapshots" at nexus + "content/repositories/snapshots")
+  else
+    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+}
 
 publishMavenStyle := true
 
@@ -68,8 +72,8 @@ pomIncludeRepository := { _ => false }
 
 pomExtra := (
   <scm>
-    <url>git@github.com:bmc/classutil.git/</url>
-    <connection>scm:git:git@github.com:bmc/classutil.git</connection>
+    <url>https://github.com/ruippeixotog/classutil</url>
+    <connection>scm:git:https://github.com/ruippeixotog/classutil.git</connection>
   </scm>
   <developers>
     <developer>
