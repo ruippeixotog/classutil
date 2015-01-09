@@ -43,7 +43,7 @@
   * iterator approach, which offers minimal startup penalty and the ability
   * to cut the traversal short.
   */
-package org.clapper.classutil
+package net.ruippeixotog.classutil
 
 import scala.annotation.tailrec
 import scala.language.reflectiveCalls
@@ -426,7 +426,7 @@ class ClassFinder(path: Seq[File]) {
 
   private def classData(is: InputStream,
                         location: File): Iterator[ClassInfo] = {
-    import org.clapper.classutil.asm.ClassFile
+    import net.ruippeixotog.classutil.asm.ClassFile
 
     ClassFile.load(is, location)
   }

@@ -37,9 +37,9 @@
 
 /** The ASM-specific implementation of the Class Finder capabilities.
   */
-package org.clapper.classutil.asm
+package net.ruippeixotog.classutil.asm
 
-import org.clapper.classutil._
+import net.ruippeixotog.classutil._
 
 import scala.collection.mutable.{Set => MutableSet}
 import scala.collection.mutable.{HashMap, HashSet}

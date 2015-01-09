@@ -35,7 +35,8 @@
   ---------------------------------------------------------------------------
 */
 
-package org.clapper.classutil
+package net.ruippeixotog.classutil
+
 import scala.language.existentials
 
 /** Contains the actual logic that maps a Scala object to a Java bean.

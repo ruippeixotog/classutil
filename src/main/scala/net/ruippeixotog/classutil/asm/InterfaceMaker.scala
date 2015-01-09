@@ -35,9 +35,9 @@
   ---------------------------------------------------------------------------
 */
 
-package org.clapper.classutil.asm
+package net.ruippeixotog.classutil.asm
 
-import org.clapper.classutil._
+import net.ruippeixotog.classutil._
 
 import org.objectweb.asm.{ClassWriter, Type}
 import org.objectweb.asm.Opcodes._

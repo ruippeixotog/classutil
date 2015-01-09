@@ -38,7 +38,7 @@
 /**
  *
  */
-package org.clapper.classutil
+package net.ruippeixotog.classutil
 
 /**
   * Class name generator. Mix in, to get class name generation capabilities.

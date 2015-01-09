@@ -35,7 +35,7 @@
   ---------------------------------------------------------------------------
 */
 
-package org.clapper.classutil
+package net.ruippeixotog.classutil
 
 import org.scalatest.{FunSuite, Assertions}
 

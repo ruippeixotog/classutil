@@ -35,7 +35,7 @@
   ---------------------------------------------------------------------------
 */
 
-package org.clapper.classutil
+package net.ruippeixotog.classutil
 
 /**
  * Takes a Scala `Map`, with `String` keys and object values, and generates
@@ -139,7 +139,7 @@ trait MapToBeanMapper {
 object MapToBean extends ClassNameGenerator {
   val ClassNamePrefix = "org.clapper.classutil.MapBean"
 
-  private val mapper = new org.clapper.classutil.asm.MapToBeanMapperImpl
+  private val mapper = new net.ruippeixotog.classutil.asm.MapToBeanMapperImpl
 
   /**
    * Transform a map into an object. The class name will be generated,

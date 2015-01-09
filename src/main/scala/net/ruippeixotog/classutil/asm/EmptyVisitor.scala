@@ -1,4 +1,4 @@
-package org.clapper.classutil.asm
+package net.ruippeixotog.classutil.asm
 
 import org.objectweb.asm._
 

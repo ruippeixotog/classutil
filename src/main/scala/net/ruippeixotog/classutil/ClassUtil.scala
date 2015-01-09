@@ -35,7 +35,7 @@
   ---------------------------------------------------------------------------
 */
 
-package org.clapper.classutil
+package net.ruippeixotog.classutil
 
 import scala.reflect.{ClassTag, classTag}
 import grizzled.reflect
