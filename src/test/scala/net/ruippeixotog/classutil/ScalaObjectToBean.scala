@@ -36,7 +36,7 @@
 */
 
 import org.scalatest.{FunSuite, Assertions}
-import org.clapper.classutil.ScalaObjectToBean
+import net.ruippeixotog.classutil.ScalaObjectToBean
 
 class ScalaObjectToBeanTest extends FunSuite {
   test("ScalaObjectToBean, non-recursive, getters and setters") {

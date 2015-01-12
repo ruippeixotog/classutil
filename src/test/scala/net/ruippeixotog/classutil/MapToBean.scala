@@ -36,7 +36,7 @@
 */
 
 import org.scalatest.{FunSuite, Assertions}
-import org.clapper.classutil.MapToBean
+import net.ruippeixotog.classutil.MapToBean
 
 class MapToBeanTest extends FunSuite {
   val map =  Map("oneInt" -> 1,

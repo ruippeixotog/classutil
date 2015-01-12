@@ -121,7 +121,7 @@ class ClassUtilTest extends FunSuite {
     }.toSeq
 
     val ClassesToTest = Seq[(Class[_], String)](
-      (getClass,        "Lorg/clapper/classutil/ClassUtilTest;"),
+      (getClass,        "Lnet/ruippeixotog/classutil/ClassUtilTest;"),
       (classOf[String], "Ljava/lang/String;")
     )
 
